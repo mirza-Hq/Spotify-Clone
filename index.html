@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Spotify - Web Player: Music for everyone'</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="navbar flex">
+
+        <div class="leftnavbar flex">
+            <img class="invert" src="img/logo.svg" alt="">
+            <img class="invert" src="img/home.svg" alt="home">
+            <input type="text" class="search-bar" placeholder="What do you want to play?">
+            <span class="search-icon"><img class="invert" src="img/search.svg" alt="search"></span>
+        </div>
+
+        <div class="rightnavbar flex">
+            <a href="#">Premium </a>
+            <a href="#">Support </a>
+            <a href="#">Download </a>
+            <a href="#">Install App</a>
+            <a href="signup">Sign up</a>
+            <button class="login-btn">Log in</button>
+        </div>
+    </div>
+    <div class="container flex ">
+        <div class="left border bg-grey1  rounded">
+            <div style="display: flex; justify-content: space-between ;">
+                <div class="yrlbr">Your Library</div>
+                <div>
+                    <img class="cross invert" src="img/cross.svg" alt="cross">
+                </div>
+            </div>
+            <div class="songlist rounded">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="buttom1 "><span>Legal</span>
+                <span>Safety & Privacy Center</span>
+                <span>Privacy Policy</span>
+                <span>Cookies</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+            </div>
+        </div>
+        <div class="right border bg-grey rounded">
+            <img class="hamburger invert" src="img/hamburg.svg" alt="hamburg">
+            <div class="playlist">
+                <h1>Popular Albums</h1>
+                <div class="left-arrow">
+                    <img src="img/left-arrow.svg">
+                </div>
+                <div class="cardcontainer ">
+                </div>
+                <div class="right-arrow">
+                    <img src="img/right-arrow.svg">
+                </div>
+            </div>
+            <div class="Artists">
+                <h1>Popular Artist</h1>
+                <div class="artist-left-arrow">
+                    <img src="img/artist-left-arrow.svg">
+                </div>
+                <div class="roundcontainer">
+                </div>
+                 <div class="artist-next-arrow">
+                    <img src="img/artist-next-arrow.svg">
+                </div>
+            </div>
+
+            <div class="description">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For The Record</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Communities</h3>
+                    <ul>
+                        <li>For Artist</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Supports</li>
+                        <li>Free Mobile Apps</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Spotify Plans</h3>
+                    <ul>
+                        <li>Premium Indivisual</li>
+                        <li>Premium Duo</li>
+                        <li>Premium Family</li>
+                        <li>Premium Students</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="playbar invert">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div id="currentsonginfo" style="font-size:medium;" class="songinfo invert"></div>
+                    <div class="songbtn">
+                        <img width="35px" id="previous" src="img/prev song.svg" alt="">
+                        <img width="35px" id="play" src="img/play.svg" alt="">
+                        <img width="35px" id="Next" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="time invert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
